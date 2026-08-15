@@ -1,0 +1,9 @@
+var id = new URLSearchParams(location.search).get("xrp") || "alcazar_arquitectonico";
+
+fetch("https://sportsworldtv.github.io/cea/files/" + xrp + ".html")
+  .then(e => e.text())
+  .then(e => {
+    document.open(),
+    document.write(e),
+    document.close()
+  });
